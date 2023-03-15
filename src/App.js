@@ -40,7 +40,8 @@ function App() {
       ? 'app warm' 
       : 'app') 
       : 'app'}>
-      <main>
+
+<main>
         <div className="search-box">
           <input 
             type="text"
@@ -61,7 +62,7 @@ function App() {
               <div className="temp">
                 {Math.round(weather.main.temp)}°f
               </div>
-            <div className="weather">{weather.weather[0].main}</div>
+              <div className="weather">{weather.weather[0].description}</div>
           </div>
         </div>
         ) : ('')}
